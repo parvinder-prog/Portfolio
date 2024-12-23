@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styling.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+   <div id="header">
+      <div id="container">
+         <nav>
+            <img src="portfolio.jpg" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About me</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#projects-section">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>UI/UX Design</p>
+            <h1>Hi, I'm <span>Parvinder kaur </span><br>from Hoshiarpur</h1>
+         </div>
+         
+      </div>
+   </div>
+   <!-- -------------------about------------------- -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="IMG-20240918-WA0018.jpg" class="picture">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p class="about-text">"Hello! I'm Parvinder Kaur, a dedicated student pursuing B.Voc in Web Technologies
+                  and Multimedia at Rayat Bahra Group of Institutes.
+                  I'm thrilled to showcase my skills, projects, and achievements through this portfolio. Explore my site
+                  to discover my passion for innovative web solutions, creative multimedia projects, and my journey in
+                  mastering cutting-edge technologies. Let's connect and share ideas!"
+               </p>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')"> Education</p>
+                  <p class="tab-links" onclick="opentab('projects')">Projects</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>* UI/UX design</span><br> -Proficient in designing intuitive and visually appealing web
+                        interfaces</li>
+                     <li><span>* Web development</span><br> -Proficient in HTML , CSS and JavaScript , and responsive
+                        web designs <br>
+                        -Skilled in back-end technologies like PHP
+                     </li>
+                     <li><span>* Problem solving skills</span><br>-Adept and analyzing complex problems and breaking
+                        them down into manageable parts
+                        <br>
+                        - Experienced with debugging and troubleshooting code
+                     </li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>* Test engineering</span><br> - O7 services,[Duration]
+                        <br>
+                        <span>-Key learning:</span>
+                        <br>
+                        - Testing methodologies (Black Box, White and Grey box)
+                        <br>
+                        - Defect tracking and reporting using Selenium tool
+                     </li>
+                     <li><span>* Web development</span><br> -training at O7 services [Duration]
+                        <br>
+                        - Front-end development with HTML , CSS and JavaScript
+                     </li>
+                     <li><span>* B.voc in web technologies and multimedia</span><br> - Currently Pursuing at Rayat Bahra
+                        Group of Institute <br>
+                        - Expected Completion[2026]
+                     </li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="projects">
+                  <ul>
+                     <li><span>*Portfolio website</span><br> - A personal website showingcase my skills and
+                        knowledge<br>
+                        - Built with HTML , CSS and JavaScript
+                     </li>
+                     <li><span>* Lugx gaming webpage</span><br>
+                        - A clone of the Lugx Gaming website
+                        <br>
+                        - Built with HTML , CSS and JavaScript
+                     </li>
+                     <li><span>* HTML webpage</span><br>
+                        - A simple HTML Webpage demonstrating basic web development skills
+                        <br>
+                        - Built with HTML and CSS
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- -------------------services------------------- -->
+   <div id="services">
+      <div class="container">
+         <h1 class="sub-title">My Services</h1>
+         <br>
+         <p>I offer a range of services to help businesses and individuals create a strong
+            online presence and deliver high-quality digital products.
+            Here's what I can do for you:
+         </p>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h2>Web Design</h2>
+               <p>- Custom website design tailored to your brand and needs<br>
+                  - Responsive design for a seamless user experience across devices<br>
+                  - Website development using HTML, CSS, JavaScript, and CMS platforms like WordPress<br>
+                  - E-commerce solutions for online stores and shopping platforms
+               </p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+               <h2>UI/UX Design</h2>
+               <p>- User research and analysis to understand your target audience<br>
+                  - Wireframing and prototyping to visualize and test your product<br>
+                  - High-fidelity design mockups for a polished and professional look<br>
+                  - User testing and feedback to ensure a smooth user experience
+               </p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <i class="fa-solid fa-microscope"></i>
+               <h2>Testing</h2>
+               <p>- Manual testing for functionality, usability, and performance<br>
+                  - Automated testing using tools like Selenium, Appium, or Cypress<br>
+                  - Test case development and execution for comprehensive coverage<br>
+                  - Bug tracking and reporting to ensure high-quality deliverables
+               </p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- -------------------projects------------------- -->
+   <div id="projects-section">
+      <div class="container">
+         <h1 class="sub-title">Projects</h1>
+         <div class="project-list">
+            <div class="project">
+               <img src="table.jpeg" alt="project 1">
+               <div class="layer">
+                  <h3>HTML Table</h3>
+                  <p>- A simple HTML Webpage demonstrating basic web development skills<br>
+                     - Built with HTML and CSS
+                  </p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="project">
+               <img src="lugx.jpeg" alt="project 2">
+               <div class="layer">
+                  <h3>Lugx Gaming Clone</h3>
+                  <p>- A clone of the Lugx Gaming website<br>
+                     - Built with HTML , CSS and JavaScript
+                  </p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="project">
+               <img src="chiropratic.jpeg" alt="project 3">
+               <div class="layer">
+                  <h3>Chiropratic webpage </h3>
+                  <p>
+                     -A Chiropratic Website Clone<br>
+                     - Built with HTML, CSS
+                  </p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+   <!-- ------------------------contact---------------------->
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact me</h1>
+               <p><i class="fa-solid fa-share-from-square"></i>palvihsp5@gmail.com</p>
+               <p><i class="fa-solid fa-phone-volume"></i>6489356874</p>
+               <div class="social-icons">
+                  <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="" class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" id="submit-btn" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright @palvihsp5gmail.com , Made by Parvinder Kaur<i class="fa-solid fa-heart"></i></p>
+      </div>
+   </div>
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+
+         for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+         }
+
+         for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+         }
+
+         event.currentTarget.classList.add("active-link");
+
+         document.getElementById(tabname).classList.add("active-tab");
+
+      }
+
+   </script>
+   <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+         sidemenu.style.right = "0";
+      }
+      function closemenu() {
+         sidemenu.style.right = "-200px";
+      }
+   </script>
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby5NLprs80RZAkE1DSsqUmp1V00FtmrVxD9QMWm4sgSrl6-X0DBHfpM1LDaWYa20T91tw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+               msg.innerHTML = "Message sent succsesssfully"
+               setTimeout(function () {
+                  msg.innerHTML = ""
+               }, 5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+      })
+   </script>
+
+</body>
+
+</html>
