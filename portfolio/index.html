@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- AOS CSS -->
+   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+   <video class="video-bg" src="images/background.mp4" autoplay muted loop></video>
+   <div id="header">
+      <div id="container">
+         <nav>
+            <img src="images/portfolio-logo.png" class="logo" data-aos="fade-down" />
+            <ul id="sidemenu" data-aos="fade-left">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About me</a></li>
+               <li><a href="#expertise">Expertise</a></li>
+               <li><a href="#projects-section">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+
+         <div class="header-text" data-aos="fade-right">
+            <p>Aspiring Web Developer and UI/UX Designer</p>
+            <h1>Hi, I'm <span>Parvinder Kaur</span><br />Clean visuals. Clean code.</h1>
+         </div>
+
+         <!-- 🔮 Neon Circular Image Section -->
+         <div class="neon-image-wrapper">
+            <img src="images\self-image.jpeg" alt="Profile Image" class="neon-img" data-aos="fade-left">
+         </div>
+      </div>
+   </div>
+
+   <!-- About Section -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1" data-aos="fade-right">
+               <img src="images\self-image.jpeg" class="picture">
+            </div>
+            <div class="about-col-2" data-aos="fade-left">
+               <h1 class="sub-title">About Me</h1>
+               <p class="about-text">
+                  I’m Parvinder Kaur, a B.Voc student specializing in Web Technologies and Multimedia. I’m passionate
+                  about building responsive websites and designing seamless user experiences, continuously honing my
+                  skills through hands-on projects.
+               </p>
+
+
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                  <p class="tab-links" onclick="opentab('projects')">Projects</p>
+               </div>
+
+               <!-- Skills Section -->
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span class="skills-heading">✅ Web Development</span><br>- Proficient in HTML, CSS, JavaScript,
+                        and responsive web
+                        design techniques.</li>
+
+                     <li><span class="skills-heading">🎨 UI/UX Design</span><br>- Strong understanding of design
+                        principles, wireframing, and
+                        user flow using Figma and Canva.</li>
+
+                     <li><span class="skills-heading">📊 Project Management</span><br>- Able to plan, organize, and
+                        manage project timelines and
+                        deliverables efficiently.</li>
+
+                  </ul>
+               </div>
+
+               <!-- Education section -->
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li>
+                        <span>🎓 Bachelor of Vocation (B.Voc) – Web Technologies & Multimedia</span><br>
+                        - Currently pursuing (2025 – Present)<br>
+                        - Key Areas: Web Development, UI/UX Design, MediaProduction, Digital Marketing
+                     </li>
+
+                     <li>
+                        <span>📚 Media Development & Graphic Design</span><br>
+                        <p> - Hands-on experience in photo editing, motion graphics, and creative design tools like
+                           Canva &
+                           Adobe Suite</p>
+                     </li>
+
+                     <li>
+                        <span>👨‍💻 Web Development Training</span><br>
+                        - Practical knowledge of HTML, CSS, JavaScript, GitHub, and frontend tools<br>
+                        - Project-based learning with real-world UI clones and responsive design
+                     </li>
+
+                     <li>
+                        <span>🎤 Soft Skills & Communication Workshops</span><br>
+                        - Completed college-level workshops on communication, teamwork, and presentation skills
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- Projects section -->
+               <div class="tab-contents" id="projects">
+                  <ul>
+                     <li><span>🎵 Spotify UI Clone</span><br>- A responsive Spotify-inspired UI built with HTML,
+                        CSS, and JavaScript featuring smooth animations and sidebar navigation.</li>
+
+                     <li><span>📝 To-Do List App</span><br>- A minimal task manager with add, delete, and local
+                        storage functionality using vanilla JavaScript.</li>
+
+                     <li><span>🌐 Responsive Portfolio Website</span><br>- A personal portfolio with fixed
+                        sidebar and isolated scroll sections built using modern HTML and CSS.</li>
+
+                     <li><span>🧮 Calculator App</span><br>- A simple and interactive calculator built with
+                        JavaScript, supporting basic arithmetic operations and a clean user interface.</li>
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Services Section -->
+   <div id="expertise">
+      <div class="container" data-aos="zoom-in">
+         <h1 class="sub-title">Expertise</h1>
+         <p>I craft user-centered websites and visuals that balance design and functionality — turning ideas into
+            digital experiences.</p>
+
+
+         <div class="services-list">
+            <div data-aos="fade-up" data-aos-delay="100">
+               <i class="fa-solid fa-code"></i>
+               <h2>Web Development</h2>
+               <p>
+                  - Build responsive and visually appealing websites.<br>
+                  - Write clean, well-structured, and maintainable frontend code.<br>
+                  - Optimize for speed, performance, and mobile-first design.<br>
+                  - Implement modern HTML, CSS, and JavaScript practices.<br>
+                  - Ensure cross-browser compatibility and smooth user experience.
+               </p>
+               <a href="#">Learn more</a>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200">
+               <i class="fa-sharp fa-solid fa-wand-magic-sparkles"></i>
+               <h2>Responsive Design Optimization</h2>
+               <p>
+                  - Pixel-perfect layouts across all screen sizes.<br>
+                  - Mobile-first and accessibility-focused design.<br>
+                  - Cross-browser and cross-device testing.<br>
+                  - Use of modern CSS (Flexbox, Grid, Media Queries).<br>
+                  - Performance optimization for mobile users.
+               </p>
+               <a href="#">Learn more</a>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300">
+               <i class="fa-solid fa-microscope"></i>
+               <h2>Mobile App UI Prototyping</h2>
+               <p>
+                  - Interactive design prototypes for mobile apps.<br>
+                  - Wireframing and layout planning.<br>
+                  - Smooth transitions and screen flows.<br>
+                  - Design systems for iOS and Android platforms.<br>
+                  - Ready-to-develop handoffs using Figma or Adobe XD.
+               </p>
+               <a href="#">Learn more</a>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Projects Section -->
+   <div id="projects-section">
+      <div class="container" data-aos="fade-up">
+         <h1 class="sub-title">Projects</h1>
+         <div class="project-list">
+            <div class="project" data-aos="zoom-in">
+               <img src="images/spotify-clone.png" alt="project 1">
+               <div class="layer">
+                  <h2>Spotify Clone</h2>
+                  <p>- A clean and simple music UI clone made while learning front-end basics. Built for practice with
+                     fixed sidebar navigation and responsive scrollable sections</p>
+                  <a href="https://parvinder-prog.github.io/Spotify-project/" target="_blank"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+               </div>
+            </div>
+            <div class="project" data-aos="zoom-in" data-aos-delay="200">
+               <img src="images/to-do-list.png" alt="project 2">
+               <div class="layer">
+                  <h2>To-Do List App</h2>
+                  <p>- A minimal and interactive task manager built using HTML, CSS & JavaScript. A simple productivity
+                     tool built using front-end basics with clean UI</p>
+                  <a href="https://parvinder-prog.github.io/to_do_list/" target="_blank"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+               </div>
+            </div>
+            <div class="project" data-aos="zoom-in" data-aos-delay="400">
+               <img src="images/calculator.png" alt="project 3">
+               <div class="layer">
+                  <h2>Calculator App</h2>
+                  <p>- A responsive and functional calculator built using HTML, CSS & JavaScript. Clean layout and
+                     smooth button logic for basic arithmetic operation</p>
+                  <a href="https://parvinder-prog.github.io/calculator-app/" target="_blank"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+
+   <!-- Contact Section -->
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left" data-aos="fade-right">
+               <h1 class="sub-title">Contact me</h1>
+               <p><i class="fa-solid fa-share-from-square"></i>
+                  <a href="mailto:palvihsp5@gmail.com" target="_blank">palvihsp5@gmail.com</a>
+               </p>
+               <p><i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/parvinder-prog" target="_blank">https://github.com/parvinder-prog</a>
+               </p>
+
+               <div class="social-icons">
+                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="resume/Parvinder_Kaur_Resume_final.pdf"  class="btn" download>Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" id="submit-btn" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>© 2025 Parvinder Kaur <i class="fa-solid fa-heart"></i><br/>
+         Follow <a href="https://www.instagram.com/creative.codex1/" target="_blank" class="creative-link">@creative.codex1</a> for web dev & UI tips
+         </p>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+
+   <!-- AOS JS -->
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 1000,
+         once: true
+      });
+   </script>
+
+</body>
+
+</html>
